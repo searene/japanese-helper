@@ -1,5 +1,5 @@
 from anki_testing import anki_running
-from jp_helper.main import init_jp_helper
+from jp_helper import init_jp_helper
 
 with anki_running() as app:
 

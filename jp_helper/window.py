@@ -118,8 +118,9 @@ class JapaneseHelperDialog(QDialog):
         audio_file_path = self.fetch_audio(self.get_query())
         if audio_file_path is None:
             showWarning("Cannot find audio for this word.")
-        editor.addMedia(audio_file_path)
-        self.close()
+        else:
+            self.close()
+            editor.addMedia(audio_file_path)
 
     def get_query(self) -> str:
         return self.text_editor.text().strip()
