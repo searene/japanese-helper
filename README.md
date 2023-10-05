@@ -1,6 +1,6 @@
 # Japanese-Helper
 
-![Demo](https://github.com/searene/japanese-helper/blob/master/demo/demo.mp4)
+![Demo](https://github.com/searene/japanese-helper/blob/master/demo/demo.gif)
 
 This is an Anki addon that helps you add audio and pitch accents to cards. It fetches the data from jotoba.de.
 
