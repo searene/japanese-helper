@@ -17,6 +17,7 @@ from aqt.qt import (
     QPushButton,
     QLabel,
     QWidget,
+    QComboBox,
     Qt,
     qtmajor,
 )
@@ -68,6 +69,13 @@ class JapaneseHelperDialog(QDialog):
         self.setWindowTitle("Japanese Helper")
         self.layout = QVBoxLayout()
         self.setLayout(self.layout)
+
+        source_layout = QHBoxLayout()
+        source_layout.addWidget(QLabel("Source: "))
+        source_combo_box = QComboBox()
+        source_combo_box.addItem("jotoba.de")
+        source_layout.addWidget(source_combo_box)
+        self.layout.addLayout(source_layout)
 
         self.text_editor = QLineEdit()
         input_layout = QHBoxLayout()
